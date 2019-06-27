@@ -34,6 +34,7 @@ Library
   else
       if os(freebsd)
          Includes:           sys/param.h, sys/mount.h
+         CC-Options:           "-DFUSE_USE_VERSION=26"
          CC-Options:           "-Df_namelen=f_namemax"
       else
          Includes:               sys/statfs.h
